@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Way of The Warrior</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<header>
+		<a href="#" class="logo">Samurai<span>.</span></a>
+     <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class = navigation>
+        <li><a href = "#banner">Home</a></li>
+        <li><a href = "#rise">Rise</a></li>
+        <li><a href = "#life">Life</a></li>
+        <li><a href = "#legacy">Legacy</a></li>
+      </ul>
+    </header>
+
+
+    <section class = "banner" id = "banner">
+      <div class = "content">
+        <h2> The Way of The Warrior</h2>
+        <p>Learn about the history, livelihood, and impact left behind by the greatest guardians on the planet.</p>
+        <a href = "#rise" class="btn">Explore</a>
+        </div>
+    </section>
+    
+    <section class="about" id="rise">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titleText"><span>R</span>ise</h2>
+          <p>The term <em><strong>samurai</strong></em>, roughly means 'those who serve'. Samurai were the dominant warrior class within Japan during the Edo period from 1603 to 1867. Samurai were known as formiddable fighters and were willing to lay down their lives for the people whom they were sworn to protect, which were typically wealthy landowners who needed the protection of both their property and lives and could afford the guardianship of a <em><strong>bushi</strong></em>, or warrior, as they travelled through the warring land.
+        </p>
+          <p>
+          The earliest recordings of samurai were during the Heian period, when warriors were mustered by the various emperors of Japan to defeat the native Emishi people in the Tohoku region for rejecting those in power. After that the prevalence of samurai within Japan exploded when the Minamoto and Taira clans battled with each other for the control of the nation. The Minamoto clan won the feud, and under the control of a <em><strong>shogun</strong></em>, or military leader, the shogunate began rule over Japan and samurai were all across the country protecting and fighting warring clans for the next 700 years. When the late 15th century was reached, the country had stablized once again, and a caste system was set in place, with samurai at the top, and farmers and merchants close behind. It could easily be seen that the caste was set in an order of importance and contribution to the society. These warriors were esteemed for their bravery and formidable strengh in the face of danger or certain death.
+        </p>
+          </div>
+          <div class="col50">
+            <div class="img1">
+              <img src="/images/akashi_death_poem.png">
+              </div>
+              <figcaption class="fig1">Akashi Gidayū's Death Poem by Tsukioka Yoshitoshi, 1890.</figcaption>
+            </div>
+          </div>
+     </section>
+
+
+     <section class="menu" id="life">
+       <div class="title">
+         <div class="row2">
+           <div class="col60">
+         <h2 class="titleText"><span>L</span>ife</h2>
+         <p>
+           Samurai lived their lives according to a strict moral code, known as the <em><strong>bushido</strong></em> (way of the warrior). Comprised of seven virtues, the samurai were held to a standard of integrity and conviction, the most important of which was maintaining the honor of one's clan. This was so fundamental to these warriors that they commonly would end their own lives in the face of defeat so as to die by their own hands rather than those of the enemy.
+          </p>
+          <p>
+            Around the time the samurai became prevalent across Japan, Zen Buddhism, introduced by China, also massively increased in appeal within samurai culture, primarily for its simplicity and austere nature. The samurai appreciated the belief that they were responsible for the salvation of their own souls, as it aligned with the bushido and ideals of personal responsibility and duty that the samurai heavily aligned themselves with.
+          </p>
+
+          </div>
+          </div>
+          </div>
+          <div class="col50">
+            <div class="img1">
+              <div class="img2">
+              <img src="/images/yoshitoshi.jpg">
+              </div>
+              </div>
+              <figcaption class="fig2">Ôya Tarô Mitsukuni by Tsukioka Yoshitoshi, 1865.</figcaption>
+            </div>
+          </div>
+     </section>
+
+     <section class="menu" id="legacy">
+       <div class="title">
+         <div class="row3">
+           <div class="col70">
+         <h2 class="titleText"><span>L</span>egacy</h2>
+          <p>
+           The legacy of these great warriors can be seen all throughout popular culture today. They are seen in film, video games, television, and other forms of media as millions today are still in awe of how these people chose to live out their lives and the various virtues and commitments they made to both themselves and those that they protected. However, as with the representation of most things throughout popular culture, many of the representations of these samurai are either slightly or massively exaggerated for the sake of entertainment of the audiences expriencing them. 
+          </p>
+          <p>
+            Due to the strict social caste structure during the golden age during the Edo period, samurai were allowed to live in particular districts within castle towns. These towns, such as Kakunodate, Kitsuki, and Nagamachi still have very well preserved samurai districts that give visitors a peak into the lives of these warriors when they were home from their journeys. Today, museums across the world also house the swords, armor, and relics from the age when these formidable protectors made their mark on mankind, and gives those willing to learn more a peak back in time into the lives they led.
+          </p>
+          </div>
+          <div class="col50">
+            <div class="img3">
+              <img src="/images/waterfall.jpeg">
+              </div>
+              <figcaption class="fig1">The Falling Mist Waterfall at Mount Kurokami by Katsushika Hokusai, 1832.</figcaption>
+            </div>
+          </div>
+     </section>
+
+
+
+     <footer>By Aiman Kayad. 2021.</footer>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+
+    }
+    </script>
+  </body>
+</html>
